@@ -13,10 +13,10 @@
     margin: 0 auto;
     padding: 20px 0px;
 }
-.side_logoo{
-    background-image: url("./img/logo.png");
-    width: 30px;
-    height: 30px;
+.side_logo{
+    background-image: url("./img/logo.jpg");
+    width: 60px;
+    height: 60px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
