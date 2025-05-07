@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import SideBar from '../../Components/NavBar/NavBar';
+import SideBar from '../../components/NavBar/NavBar';
+import './Learning.css';
 
 function AddLearningProgress() {
 const [formData, setFormData] = useState({
