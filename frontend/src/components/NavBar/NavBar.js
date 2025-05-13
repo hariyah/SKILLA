@@ -34,7 +34,7 @@ function NavBar() {
                     <div className='side_logo'></div>
                     <div className='nav_bar_item'>
                         <p className={`nav_item ${currentPath === '/allPost' ? 'nav_item_active' : ''}`} onClick={() => (window.location.href = '/allPost')}>Post</p>
-                        <p className={`nav_item ${currentPath === '/learningProgress' ? 'nav_item_active' : ''}`} onClick={() => (window.location.href = '/learningProgress')}>Learning Progress</p>
+                        <p className={`nav_item ${currentPath === '/learningProgress' ? 'nav_item_active' : ''}`} onClick={() => (window.location.href = '/learningProgress')}>Learning Plan</p>
                         {allRead ? (
                             <MdNotifications
                                 className={`nav_item_icon ${currentPath === '/notifications' ? 'nav_item_icon_noty' : ''}`}
