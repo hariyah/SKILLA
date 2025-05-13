@@ -25,7 +25,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
                                 "/user/**",
                                 "/posts/**",
                                 "/media/**",
-                                "/learningProgress/**",
+                                "/learningPlan/**",
                                 "/notifications/**",
                                 "/comments/**",
                                 "/uploads/**"

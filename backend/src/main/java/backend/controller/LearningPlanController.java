@@ -36,7 +36,7 @@ public class LearningPlanController {
         return learningPlanRepository.findAll();
     }
 
-    @GetMapping("/learninglan/{id}")
+    @GetMapping("/learningPlan/{id}")
     LearningPlanModel getById(@PathVariable String id) {
         return learningPlanRepository.findById(id)
                 .orElseThrow(() -> new LearningPlanNotFoundException(id));
@@ -50,20 +50,20 @@ public class LearningPlanController {
         return learningPlanRepository.findById(id)
                 .map(learningPlanModel -> {
                     // Update fields
-                    learningPlanModel.setSkillTitle(newLearninglanModel.getSkillTitle());
+                    learningPlanModel.setSkillTitle(newLearningPlanModel.getSkillTitle());
                     learningPlanModel.setDescription(newLearningPlanModel.getDescription());
                     learningPlanModel.setPostOwnerID(newLearningPlanModel.getPostOwnerID());
                     learningPlanModel.setPostOwnerName(newLearningPlanModel.getPostOwnerName());
                     learningPlanModel.setField(newLearningPlanModel.getField());
-                    learningPlanModel.setStartDate(newLearninglansModel.getStartDate());
-                    learningPlanModel.setEndDate(newLearninglanModel.getEndDate());
+                    learningPlanModel.setStartDate(newLearningPlanModel.getStartDate());
+                    learningPlanModel.setEndDate(newLearningPlanModel.getEndDate());
 
                     // Handle image update
                     if (image != null && !image.isEmpty()) {
                         try {
                             // Delete old image if it exists
                             if (learningPlanModel.getImagePath() != null) {
-                                File oldImage = new File(System.getProperty("user.dir") + File.separator + "uploads" + File.separator + "Plan" + File.separator + learningProgressModel.getImagePath());
+                                File oldImage = new File(System.getProperty("user.dir") + File.separator + "uploads" + File.separator + "Plan" + File.separator + learningPlanModel.getImagePath());
                                 if (oldImage.exists()) {
                                     oldImage.delete();
                                 }
