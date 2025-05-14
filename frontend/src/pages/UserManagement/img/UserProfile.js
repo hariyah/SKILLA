@@ -11,7 +11,7 @@ function UserProfile() {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const response = await axios.get(http://localhost:8080/user/${userId});
+                const response = await axios.get(`http://localhost:8080/user/${userId}`);
                 setUserData(response.data);
             } catch (error) {
                 console.error('Error fetching user data:', error);
@@ -83,7 +83,7 @@ function UserProfile() {
                                     <>
                                         <button
                                             className="btn-update"
-                                            onClick={() => (window.location.href = /updateUserProfile/${userId})}
+                                            onClick={() => (window.location.href = `/updateUserProfile/${userId}`)}
                                         >
                                             <FaUserEdit /> Update
                                         </button>
@@ -91,7 +91,7 @@ function UserProfile() {
                                             className="btn-delete"
                                             onClick={() => {
                                                 if (window.confirm('Are you sure you want to delete your profile?')) {
-                                                    axios.delete(http://localhost:8080/user/${userId})
+                                                    axios.delete(`http://localhost:8080/user/${userId}`)
                                                         .then(() => {
                                                             alert('Profile deleted successfully!');
                                                             localStorage.removeItem('userID');
