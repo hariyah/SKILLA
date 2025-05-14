@@ -14,7 +14,7 @@ function UpdateUserProfile() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(http://localhost:8080/user/${id})
+    fetch(`http://localhost:8080/user/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to fetch user data');
@@ -34,7 +34,7 @@ function UpdateUserProfile() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(http://localhost:8080/user/${id}, {
+      const response = await fetch(`http://localhost:8080/user/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
