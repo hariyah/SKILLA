@@ -42,7 +42,7 @@ function UserLogin() {
           <div className="Auth_content_img">
             <div className="Auth_content_img_reg">
               <p className='auth_lft_pera'>Welcome back to <br>
-              </br>SkillZone</p>
+              </br>SKILLA</p>
               <div className='auth_pr_line'></div>
               <p className='auth_per_sub_name'>Sign in to continue your account</p>
             </div>
