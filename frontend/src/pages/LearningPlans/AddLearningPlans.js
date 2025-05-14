@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import SideBar from '../../components/NavBar/NavBar';
+import SideBar from '../../Components/NavBar/NavBar';
 import './Learning.css';
 
-function AddLearningProgress() {
+function AddLearningPlan() {
 const [formData, setFormData] = useState({
     skillTitle: '',
     description: '',
@@ -40,7 +40,7 @@ const handleImageUpload = async () => {
     const formData = new FormData();
     formData.append('image', image);
     try {
-    const response = await fetch('http://localhost:8080/learningProgress/uploadImage', {
+    const response = await fetch('http://localhost:8080/learningPlan/uploadImage', {
         method: 'POST',
         body: formData,
     });
@@ -61,7 +61,7 @@ const handlePDFUpload = async () => {
     const formData = new FormData();
     formData.append('pdf', pdf);
     try {
-    const response = await fetch('http://localhost:8080/learningProgress/uploadPDF', {
+    const response = await fetch('http://localhost:8080/learningPlan/uploadPDF', {
         method: 'POST',
         body: formData,
     });
@@ -82,16 +82,16 @@ const handleSubmit = async (e) => {
     const pdfPath = await handlePDFUpload();
     if (imagePath || pdfPath) {
     try {
-        const response = await fetch('http://localhost:8080/learningProgress', {
+        const response = await fetch('http://localhost:8080/learningPlan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...formData, imagePath, pdfPath }),
         });
         if (response.ok) {
-        alert('Learning Progress added successfully!');
-        window.location.href = '/myProgress';
+        alert('Learning Plan added successfully!');
+        window.location.href = '/myPlan';
         } else {
-        alert('Failed to add Learning Progress.');
+        alert('Failed to add Learning Plan.');
         }
     } catch (error) {
         console.error('Error:', error);
@@ -105,7 +105,7 @@ return (
     <div className='continer'>
         <div className='continSection'>
         <div className="from_continer">
-            <p className="Auth_heading">Add Learning Progress</p>
+            <p className="Auth_heading">Add Learning Plan</p>
             <form
             onSubmit={(e) => {
                 handleSubmit(e);
@@ -226,4 +226,4 @@ return (
 );
 }
 
-export default AddLearningProgress;
+export default AddLearningPlan;
