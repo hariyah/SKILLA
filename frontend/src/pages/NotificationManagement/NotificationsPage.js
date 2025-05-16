@@ -74,7 +74,7 @@
                             <MdMarkEmailRead /> Mark as Read
                         </button>
                         )}
-                        <button 
+                        <button
                         className="delete-btn"
                         onClick={() => handleDelete(notification.id)}
                         >
