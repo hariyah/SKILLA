@@ -16,7 +16,7 @@ public class UserNotFoundAdvice {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public Map<String,String> exceptionHandler(UserNotFoundException exception){
         Map<String, String> errorMap = new HashMap<>();
-        errorMap.put("errorMessage",exception.getMessage());
+        errorMap.put("ErrorMessage",exception.getMessage());
         return errorMap;
     }
 }
