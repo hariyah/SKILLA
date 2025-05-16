@@ -53,7 +53,7 @@ public class UserController {
             return ResponseEntity.ok(response);
         } else {
             System.out.println("Invalid password for email: " + loginDetails.getEmail()); // Log invalid password
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Invalid credentials!"));
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("message", "Invalid credentials!!"));
         }
     }
 
