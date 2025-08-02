@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { FaEdit } from "react-icons/fa";
 import { RiDeleteBin6Fill } from "react-icons/ri";
-import SideBar from '../../Components/NavBar/NavBar';
+import SideBar from "src/components/NavBar/NavBar.js";
 import { FaUserCircle } from "react-icons/fa";
 import { HiCalendarDateRange } from "react-icons/hi2";
 import { MdCreate } from "react-icons/md";
-import './Learning.css'
+import './LearningPlans.css';
 function MyLearningProgress() {
     const [progressData, setProgressData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);

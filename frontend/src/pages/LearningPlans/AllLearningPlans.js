@@ -5,7 +5,7 @@ import SideBar from '../../components/NavBar/NavBar';
 import { FaUserCircle } from "react-icons/fa";
 import { HiCalendarDateRange } from "react-icons/hi2";
 import { MdCreate } from "react-icons/md";
-import './Learning.css'
+import './LearningPlans.css';
 function AllLearningProgress() {
     const [progressData, setProgressData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
