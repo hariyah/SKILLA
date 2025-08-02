@@ -5,10 +5,10 @@ import { IoSend } from "react-icons/io5";
 import { RiEdit2Fill } from "react-icons/ri";
 import { MdDelete } from "react-icons/md";
 import { BiSolidLike } from "react-icons/bi";
-import SideBar from '../../components/NavBar/NavBar.js ';
-import Modal from 'react-modal';
+import SideBar from '../../components/NavBar/NavBar';
 import { MdCreate } from "react-icons/md";
-import './post.css'
+import './post.css';
+import Modal from 'react-modal';
 Modal.setAppElement('#root');
 
 function AllPost() {

@@ -28,11 +28,11 @@ function MyPost() {
         const fetchPosts = async () => {
         try {
             const response = await axios.get('http://localhost:8080/posts');
-            const loggedInUserID = localStorage.getItem('userID'); 
+            const loggedInUserID = localStorage.getItem('userID');
             const userPosts = response.data.filter((post) => post.userID === loggedInUserID); 
             const postsWithShowAllComments = userPosts.map((post) => ({
             ...post,
-            showAllComments: false, 
+            showAllComments: false,
             }));
             setPosts(postsWithShowAllComments);
 
@@ -301,7 +301,7 @@ function MyPost() {
                             {post.userID === loggedInUserID && (
                             <div>
                                 <div className='action_btn_icon_post'>
-                                <RiEdit2Fill 
+                                <RiEdit2Fill
                                     onClick={() => handleUpdate(post.id)} className='action_btn_icon' />
                                 <MdDelete
                                     onClick={() => handleDelete(post.id)}

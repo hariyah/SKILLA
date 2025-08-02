@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { FaEdit } from "react-icons/fa";
 import { RiDeleteBin6Fill } from "react-icons/ri";
-import SideBar from "../..NavBar.js";
+import SideBar from '../../components/NavBar/NavBar';
 import { FaUserCircle } from "react-icons/fa";
 import { HiCalendarDateRange } from "react-icons/hi2";
 import { MdCreate } from "react-icons/md";
-import './LearningPlans.css';
+import "./LearningPlans.css";
 
 function AllLearningPlans() {
     const [progressData, setProgressData] = useState([]);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import SideBar from "src/components/NavBar/NavBar.js";
+import SideBar from '../../components/NavBar/NavBar';
 
 function UpdateLearningPlan() {
     const { id } = useParams();

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SideBar from '../../components/NavBar/NavBar';
-import './MyLearningPlans.css';
+import "./LearningPlans.css";
 
 function AddLearningPlan() {
 const [formData, setFormData] = useState({

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import SideBar from '../../Components/NavBar/NavBar';
+import SideBar from '../../components/NavBar/NavBar';
+
 function UpdateUserProfile() {
   const { id } = useParams();
   const [formData, setFormData] = useState({
@@ -10,7 +11,7 @@ function UpdateUserProfile() {
     phone: '',
     bio: '', // Added bio field
   });
- 
+
   const navigate = useNavigate();
 
   useEffect(() => {

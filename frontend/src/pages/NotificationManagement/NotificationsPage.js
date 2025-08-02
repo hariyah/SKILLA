@@ -1,6 +1,6 @@
     import React, { useEffect, useState } from 'react';
     import axios from 'axios';
-    import SideBar from '../../Components/NavBar/NavBar';
+    import SideBar from '../../components/NavBar/NavBar';
     import { RiDeleteBin6Fill } from "react-icons/ri";
     import { IoMdNotificationsOff } from "react-icons/io";
     import { MdMarkEmailRead } from "react-icons/md";
