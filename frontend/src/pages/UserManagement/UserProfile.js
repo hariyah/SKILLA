@@ -4,6 +4,7 @@ import { FaUserEdit, FaTrashAlt, FaSignOutAlt, FaUser, FaEnvelope, FaPhone, FaIn
 import { useNavigate } from 'react-router-dom';
 import { FaNewspaper, FaChartLine } from 'react-icons/fa';
 
+
 function UserProfile() {
     const [userData, setUserData] = useState(null);
     const userId = localStorage.getItem('userID');

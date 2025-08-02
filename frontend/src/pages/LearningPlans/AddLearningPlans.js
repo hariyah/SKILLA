@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SideBar from '../../components/NavBar/NavBar';
 import "./LearningPlans.css";
 
-function AddLearningPlan() {
+function AddLearningPlans() {
 const [formData, setFormData] = useState({
     skillTitle: '',
     description: '',
@@ -226,4 +226,4 @@ return (
 );
 }
 
-export default AddLearningPlan;
+export default AddLearningPlans;
