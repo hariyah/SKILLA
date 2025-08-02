@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import SideBar from '../../Components/NavBar/NavBar';
+import SideBar from '../../components/NavBar/NavBar';
 function AddNewPost() {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');

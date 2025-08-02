@@ -6,7 +6,8 @@ import { FaUserCircle } from "react-icons/fa";
 import { HiCalendarDateRange } from "react-icons/hi2";
 import { MdCreate } from "react-icons/md";
 import './LearningPlans.css';
-function MyLearningProgress() {
+
+function MyLearningPlans() {
     const [progressData, setProgressData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const userId = localStorage.getItem('userID');
@@ -136,4 +137,4 @@ function MyLearningProgress() {
     );
 }
 
-export default MyLearningProgress;
+export default MyLearningPlans;

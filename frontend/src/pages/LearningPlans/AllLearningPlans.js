@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { FaEdit } from "react-icons/fa";
 import { RiDeleteBin6Fill } from "react-icons/ri";
-import SideBar from '../../components/NavBar/NavBar';
+import SideBar from "../..NavBar.js";
 import { FaUserCircle } from "react-icons/fa";
 import { HiCalendarDateRange } from "react-icons/hi2";
 import { MdCreate } from "react-icons/md";
 import './LearningPlans.css';
-function AllLearningProgress() {
+
+function AllLearningPlans() {
     const [progressData, setProgressData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const userId = localStorage.getItem('userID');
@@ -135,4 +136,4 @@ function AllLearningProgress() {
     );
 }
 
-export default AllLearningProgress;
+export default AllLearningPlans;
