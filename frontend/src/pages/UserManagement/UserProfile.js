@@ -3,7 +3,7 @@ import axios from 'axios';
 import { FaUserEdit, FaTrashAlt, FaSignOutAlt, FaUser, FaEnvelope, FaPhone, FaInfoCircle } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { FaNewspaper, FaChartLine } from 'react-icons/fa';
-
+import NavBar from '../../components/NavBar/NavBar';
 
 function UserProfile() {
     const [userData, setUserData] = useState(null);
