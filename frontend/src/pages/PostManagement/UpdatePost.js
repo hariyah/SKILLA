@@ -3,7 +3,7 @@
     import axios from 'axios';
     import SideBar from '../../components/NavBar/NavBar';
     import { MdDelete } from "react-icons/md";
-    import './UpdatePost.css'; // Assuming you have a CSS file for styling
+     // Assuming you have a CSS file for styling
     
     function UpdatePost() {
     const { id } = useParams(); // Get the post ID from the URL
